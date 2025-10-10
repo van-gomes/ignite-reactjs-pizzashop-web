@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
-// import { Input } from '@/components/ui/input'
-// import { Label } from '@/components/ui/label'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 
 export function SignIn() {
 
@@ -29,8 +29,8 @@ export function SignIn() {
 
           <form className="space-y-4">
             <div className="space-y-2">
-              {/* <Label htmlFor="email">Seu e-mail</Label>
-              <Input id="email" type="email" {...register('email')} /> */}
+              <Label htmlFor="email">Seu e-mail</Label>
+              <Input id="email" type="email" />
             </div>
 
             <Button className="w-full" type="submit">
