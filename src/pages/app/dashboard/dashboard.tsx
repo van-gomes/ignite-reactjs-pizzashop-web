@@ -1,9 +1,10 @@
 import { Helmet } from 'react-helmet-async'
 
-import { DayOrdersAmountCard } from '../app/dashboard/day-orders-amount-card'
-import { MonthCanceledOrdersAmountCard } from '../app/dashboard/month-canceled-orders-amount-card'
-import { MonthOrdersAmountCard } from '../app/dashboard/month-orders-amount-card'
-import { MonthRevenueCard } from '../app/dashboard/month-revenue-card'
+import { DayOrdersAmountCard } from '../dashboard/day-orders-amount-card'
+import { MonthCanceledOrdersAmountCard } from '../dashboard/month-canceled-orders-amount-card'
+import { MonthOrdersAmountCard } from '../dashboard/month-orders-amount-card'
+import { MonthRevenueCard } from '../dashboard/month-revenue-card'
+
 export function Dashboard() {
   return (
     <>
