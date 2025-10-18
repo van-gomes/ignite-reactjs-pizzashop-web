@@ -39,7 +39,7 @@ export function OrderDetails() {
             <TableRow>
               <TableCell className="text-muted-foreground">Cliente</TableCell>
               <TableCell className="flex justify-end">
-                Diego Schell Fernandes
+                Vânia Gomes
               </TableCell>
             </TableRow>
             <TableRow>
@@ -51,7 +51,7 @@ export function OrderDetails() {
             <TableRow>
               <TableCell className="text-muted-foreground">E-mail</TableCell>
               <TableCell className="flex justify-end">
-                diego@rocketseat.com.br
+                vania@rocketseat.com.br
               </TableCell>
             </TableRow>
             <TableRow>
