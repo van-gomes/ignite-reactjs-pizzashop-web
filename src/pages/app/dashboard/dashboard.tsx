@@ -1,11 +1,11 @@
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from "react-helmet-async";
 
-import { DayOrdersAmountCard } from '../dashboard/day-orders-amount-card'
-import { MonthCanceledOrdersAmountCard } from '../dashboard/month-canceled-orders-amount-card'
-import { MonthOrdersAmountCard } from '../dashboard/month-orders-amount-card'
-import { MonthRevenueCard } from '../dashboard/month-revenue-card'
-import { RevenueChart } from '../dashboard/revenue-chart'
-
+import { DayOrdersAmountCard } from "../dashboard/day-orders-amount-card";
+import { MonthCanceledOrdersAmountCard } from "../dashboard/month-canceled-orders-amount-card";
+import { MonthOrdersAmountCard } from "../dashboard/month-orders-amount-card";
+import { MonthRevenueCard } from "../dashboard/month-revenue-card";
+import { RevenueChart } from "../dashboard/revenue-chart";
+import { PopularProductsChart } from "../dashboard/popular-products-chart";
 export function Dashboard() {
   return (
     <>
@@ -20,10 +20,11 @@ export function Dashboard() {
           <MonthCanceledOrdersAmountCard />
         </div>
 
-        <div className="grid grid-cols-9 gap-4">
+        <div className="grid grid-cols-9 gap-4 mt-6 min-h-[300px]">
           <RevenueChart />
+          <PopularProductsChart />
         </div>
       </div>
     </>
-  )
+  );
 }
