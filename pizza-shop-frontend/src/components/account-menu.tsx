@@ -13,8 +13,10 @@ import {
   DropdownMenuTrigger,
 } from './ui/dropdown-menu'
 
+import { Skeleton } from './ui/skeleton'
+
 export function AccountMenu() {
-  const { data: profile } = useQuery({
+  const { data: profile, isLoading: isLoadingProfile } = useQuery({
     queryKey: ['profile'],
     queryFn: getProfile,
   })
