@@ -1,7 +1,6 @@
 import { Building, ChevronDown, LogOut } from 'lucide-react'
 import { useQuery } from '@tanstack/react-query'
 import { getManagedRestaurant } from '@/api/get-managed-restaurant'
-import { getProfile } from '@/api/get-profile'
 
 import { Button } from './ui/button'
 import {
@@ -13,14 +12,7 @@ import {
   DropdownMenuTrigger,
 } from './ui/dropdown-menu'
 
-import { Skeleton } from './ui/skeleton'
-
 export function AccountMenu() {
-  const { data: profile, isLoading: isLoadingProfile } = useQuery({
-    queryKey: ['profile'],
-    queryFn: getProfile,
-  })
-
   const { data: managedRestaurant } = useQuery({
     queryKey: ['managed-restaurant'],
     queryFn: getManagedRestaurant,
