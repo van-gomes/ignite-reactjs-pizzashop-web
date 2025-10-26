@@ -13,7 +13,7 @@ import {
 } from './ui/dropdown-menu'
 
 export function AccountMenu() {
-  const { data: managedRestaurant } = useQuery({
+  useQuery({
     queryKey: ['managed-restaurant'],
     queryFn: getManagedRestaurant,
   })
